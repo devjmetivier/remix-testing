@@ -1,0 +1,36 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.fixAll.format": "always",
+    "source.organizeImports": "always"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "eslint.rules.customizations": [
+    {
+      "rule": "*",
+      "severity": "warn"
+    }
+  ],
+  "eslint.workingDirectories": [
+    {
+      "pattern": "apps/*/"
+    },
+    {
+      "pattern": "packages/*/"
+    },
+    {
+      "pattern": "tooling/*/"
+    }
+  ],
+  "tailwindCSS.experimental.classRegex": [
+    ["'([^']*)'", "Classes \\=([^;]*);"],
+    ["\"([^\"]*)\"", "Classes \\=([^;]*);"],
+    ["\\`([^\\`]*)\\`", "Classes \\=([^;]*);"]
+  ],
+  "tailwindCSS.experimental.configFile": "./tailwind.config.ts",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.preferences.autoImportFileExcludePatterns": ["next/dist/client/router.d.ts", "next/router.d.ts"],
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
